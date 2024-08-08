@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: black;
+    padding: 10px 0;
+    transition: background 0.3s;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a, .nav-item button {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover, .nav-item button:hover {
+    color: green;
+}
+
+.navbar.scrolled {
+    background: black;
+}
+
+.content {
+    padding-top: 60px;
+}
+
+section {
+    padding: 100px;
+    border-bottom: 1px solid lightgray;
+}
+
+#home { background: lightgray; }
+#about { background: gainsboro; }
+#services { background: lightgrey; }
+#contact { background: darkgrey; }
+
